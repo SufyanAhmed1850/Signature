@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --text: #eef5fb;
+    --invt: #e3eaf0;
+    --background: #171618;
+    --primary: #4a8383;
+    --secondary: #153030;
+    --accent: #c5c4c4;
+    --shadow: #100f0f6e;
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin: 20svh 0;
+    width: 95%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main input,
+main select,
+main button {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+main input,
+main select {
+    background-color: transparent;
+    border: 2px solid #c5c4c4;
+    color: #eef5fb;
+}
+
+main select option {
+    color: #081521;
+}
+
+main button {
+    cursor: pointer;
+    background-color: #4a8383;
+    color: #eef5fb;
+}
+
+.signature-container {
+    margin-top: 32px;
+    align-self: center;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signature-name {
+    text-shadow: 0 0 16px #eef5fb11;
+    color: #3153eb;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.signature-date {
+    text-shadow: 0 0 16px #eef5fb11;
+    color: #3153eb;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    align-self: flex-end;
+}
